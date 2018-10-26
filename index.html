@@ -1,449 +1,1501 @@
+<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
+
 <style>
 body{
-background-image: url('') !important; 
+background-image: url('https://i.imgur.com/PueqLo9.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
 background-size:cover;
-background-color:#6e6e62;
+background-attachment:fixed;
+background-color:#7B7462;
 }
- 
-body{
-background-image: url('') !important; 
+
+::-webkit-scrollbar {width: 6px; height: 6px;}
+::-webkit-scrollbar-track {background: #7B7462;}
+::-webkit-scrollbar-thumb {background: #3F3826;}
+
+#bigbox {
+position:absolute;
+background-color:rgba(63, 56, 38, 0.59);
+width:50%;
+height:219%;
+left:25%;
+top:5%;
+}
+
+#basicholder {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:7%;
+background-image: url('https://i.imgur.com/R9tePQF.png') !important; 
 background-repeat:no-repeat !important; 
 background-position:center !important; 
-background-size:cover;
-background-color:#6e6e62;
 }
- 
-::-webkit-scrollbar {width: 4px; height: 4px;}
-::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #999999;}
- 
-#tabbox1 {
+
+#nametitle {
 position:absolute;
-width:15%;
-height:5%;
-top:23%;
-left:35%;
-background-color:#24201a;
-}
- 
-#tabbox2 {
-position:absolute;
-width:13%;
-height:5%;
-top:33%;
-left:35%;
-background-color:#24201a;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox2:hover {
-width:15%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox3 {
-position:absolute;
-width:11%;
-height:5%;
-top:43%;
-left:35%;
-background-color:#24201a;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox3:hover {
-width:15%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox4 {
-position:absolute;
-width:11%;
-height:5%;
-top:53%;
-left:35%;
-background-color:#24201a;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox4:hover {
-width:15%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox5 {
-position:absolute;
-width:13%;
-height:5%;
-top:63%;
-left:35%;
-background-color:#24201a;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox5:hover {
-width:15%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tabbox6 {
-position:absolute;
-width:15%;
-height:5%;
-top:73%;
-left:35%;
-background-color:#24201a;
-}
- 
-#picbox {
-position:absolute;
-width:20%;
-height:60%;
-left:20%;
-top:20%;
-border:1px solid #24201a;
-background-image: url('http://i.imgur.com/x7x8Fu4.jpg') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-background-color:#f8fcf7;
-}
- 
-#picbox:hover {
-background-image: url('http://i.imgur.com/oU6fnrs.jpg') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#content {
-position:absolute;
-overflow:auto;
-padding:2%;
-background-color:#f8fcf7;
-border:1px solid #24201a;
-width:16.1%;
-height:52%;
-left:52%;
-top:20%;
-color:#000000;
-font-size:90%;
-font-family:BenchNine;
-}
- 
-#title {
-position:absolute;
-padding:2%;
-background-color:#f8fcf7;
-border:1px solid #24201a;
-width:1%;
-height:52%;
-left:76%;
-top:20%;
+background-color:#696969;
+width:4%;
+height:3%;
+top:9%;
+left:27%;
 text-align:center;
-color:#24201a;
-font-size:150%;
-font-family:Amatic SC;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
 }
- 
-.tabs {
-display:block;
+
+#name {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:9%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#agetitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:14%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#age {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:14%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#birthdaytitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:19%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#birthdate {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:19%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#gendertitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:24%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:3px;
+}
+
+#gender {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:24%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#racetitle {
+position:absolute;
+background-color:#696969;
+width:4%;
+height:3%;
+top:29%;
+left:27%;
+text-align:center;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:4px;
+}
+
+#race {
+position:absolute;
+background-color:#9e9e9e;
+width:6%;
+height:3%;
+top:29%;
+left:31%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:2;
+}
+
+#lace1 {
+position:absolute;
+width:10%;
+height:1%;
+top:34%;
+left:27%;
+background-image: url('https://i.imgur.com/egjYW2o.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#lace2 {
+position:absolute;
+width:17%;
+height:1%;
+top:34%;
+left:56%;
+background-image: url('https://i.imgur.com/egjYW2o.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#basicpic {
+position:absolute;
+background-color:#9e9e9e;
+width:17%;
+height:26%;
+top:9%;
+left:38%;
+background-image: url('https://i.imgur.com/yJ6zL8O.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#details{
+position:absolute;
+background-color:#9e9e9e;
+padding:2%;
+overflow:auto;
+width:13%;
+height:15%;
+top:9%;
+left:56%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#gallery {
+position:absolute;
+background-color:#7B7462;
+width:48%;
+height:35%;
+left:26%;
+top:37%;
+}
+
+#pic1 {
+position:absolute;
+background-color:#A39C8A;
+height:35%;
+width:15%;
+left:26%;
+top:37%;
+background-image: url('https://i.imgur.com/JADvjaY.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic1:hover {
+background-image: url('https://i.imgur.com/oyez7jr.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2 {
+position:absolute;
+background-color:#9e9e9e;
+height:35%;
+width:18%;
+left:41%;
+top:37%;
+background-image: url('https://i.imgur.com/PNjIeCr.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic2:hover {
+background-image: url('https://i.imgur.com/1ltn0bF.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3 {
+position:absolute;
+background-color:#A39C8A;
+height:35%;
+width:15%;
+left:59%;
+top:37%;
+background-image: url('https://i.imgur.com/6eW97Bq.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#pic3:hover {
+background-image: url('https://i.imgur.com/MLUOzmf.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#backstoryholder {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:72%;
+background-image: url('https://i.imgur.com/R9tePQF.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+}
+
+#backstory {
+position:absolute;
+background-color:#9e9e9e;
+width:32%;
+height:26%;
+top:74%;
+left:27%;
+}
+
+#backstorypic {
+position:absolute;
+width:35%;
+height:100%;
+top:0%;
+left:0%;
+}
+
+#backstorytext {
+position:absolute;
+padding:2%;
+overflow:auto;
+width:61%;
+height:89%;
+top:0%;
+left:35%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#historytab1 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:74%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab2 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:81.25%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab3 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:88.75%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab4 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:96%;
+left:60%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#historytab1:hover, #historytab2:hover, #historytab3:hover, #historytab4:hover {
+background-color:#9e9e9e;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#relationsholder {
+position:absolute;
+background-color:#7B7462;
+width:48%;
+height:40%;
+left:26%;
+top:102%;
+background-image: url('https://i.imgur.com/yPibqRo.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important;
+}
+
+#friend1 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:104%;
+left:27%;
+}
+
+#friend2 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:118%;
+left:27%;
+}
+
+#friend3 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:104%;
+left:43%;
+}
+
+#friend4 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:118%;
+left:43%;
+}
+
+#friend5 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:104%;
+left:59%;
+}
+
+#friend6 {
+position:absolute;
+background-color:#67604E;
+width:14%;
+height:12%;
+top:118%;
+left:59%;
+}
+
+#ficon {
+position:absolute;
+background-color:#7B7462;
+width:20%;
+height:45%;
+top:4%;
+left:78%;
+}
+
+#friendname {
+position:absolute;
+background-color:#7B7462;
+width:74%;
+height:20%;
+top:4%;
+left:2%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:1.5;
+}
+
+#friendrelation {
+position:absolute;
+background-color:#7B7462;
+width:74%;
+height:20%;
+top:28.5%;
+left:2%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+line-height:1.5;
+letter-spacing:3px;
+}
+
+#friendthoughts {
+position:absolute;
+width:96%;
+height:43%;
+top:53%;
+left:2%;
+font-family: 'Amatic SC', cursive;
+font-size:2vh;
+color:#CCCCCC;
+}
+
+#inventoryholder {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:132%;
+background-image: url('https://i.imgur.com/R9tePQF.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+}
+
+#inventorytab1 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:134%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab2 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:141.25%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab3 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:148.75%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab4 {
+position:absolute;
+background-color:#696969;
+width:13%;
+height:4%;
+top:156%;
+left:27%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:2.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventorytab1:hover, #inventorytab2:hover, #inventorytab3:hover, #inventorytab4:hover {
+background-color:#9e9e9e;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#inventory {
+position:absolute;
+background-color:#9e9e9e;
+width:32%;
+height:26%;
+top:134%;
+left:41%;
+}
+
+#inventorytext {
+position:absolute;
+padding:2%;
+overflow:auto;
+width:96%;
+height:89%;
+top:0%;
+left:0%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#primarytree {
+position:absolute;
+background-color:#7B7462;
+width:48%;
+height:30%;
+left:26%;
+top:162%;
+background-image: url('https://i.imgur.com/8SylmoR.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:top !important; 
+}
+
+#primarytreebox1 {
+position:absolute;
+background-color:rgba(63, 56, 38, 0.59);
+width:16.5%;
+height:26%;
+top:164%;
+left:27%;
+}
+
+#primarytreebox2 {
+position:absolute;
+background-color:rgba(63, 56, 38, 0.59);
+width:20%;
+height:26%;
+top:164%;
+left:53%;
+}
+
+#conjuration {
+position:absolute;
+background-color:#7B7462;
+padding:1%;
+overflow:auto;
+width:12.5%;
+height:17.5%;
+top:166%;
+left:28%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#conjurationspells {
+position:absolute;
+background-color:#7B7462;
+padding:1%;
+overflow:auto;
+width:16%;
+height:17.5%;
+top:166%;
+left:54%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#spelltabbox1 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:45.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox2 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:47%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox3 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:48.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox4 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:50%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox5 {
+position:absolute;
+background-color:#67604E;
+width:1%;
+height:26%;
+top:164%;
+left:51.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox1:hover, #spelltabbox2:hover, #spelltabbox3:hover, #spelltabbox4:hover, #spelltabbox5:hover {
+background-color:#7B7462;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#secondarytree {
+position:absolute;
+background-color:#e6e6e6;
+width:48%;
+height:30%;
+left:26%;
+top:192%;
+background-image: url('https://i.imgur.com/0p1oSTe.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:bottom !important; 
+}
+
+#secondarytreebox1 {
+position:absolute;
+background-color:rgba(105, 105, 105, 0.59);
+width:16.5%;
+height:26%;
+top:194%;
+left:27%;
+}
+
+#secondarytreebox2 {
+position:absolute;
+background-color:rgba(105, 105, 105, 0.59);
+width:20%;
+height:26%;
+top:194%;
+left:53%;
+}
+
+#bardism {
+position:absolute;
+background-color:#9e9e9e;
+padding:1%;
+overflow:auto;
+width:12.5%;
+height:17.5%;
+top:196%;
+left:28%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#bardismspells {
+position:absolute;
+background-color:#9e9e9e;
+padding:1%;
+overflow:auto;
+width:16%;
+height:17.5%;
+top:196%;
+left:54%;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#FFFFFF;
+}
+
+#spelltabbox6 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:45.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox7 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:47%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox8 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:48.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox9 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:50%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox10 {
+position:absolute;
+background-color:#696969;
+width:1%;
+height:26%;
+top:194%;
+left:51.5%;
+text-align:center;
+font-family: 'BenchNine', sans-serif;
+font-size:1.5vh;
+color:#CCCCCC;
+text-transform:uppercase;
+line-height:1.7;
+letter-spacing:4px;
+writing-mode: vertical-rl;
+text-orientation: sideways;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#spelltabbox6:hover, #spelltabbox7:hover, #spelltabbox8:hover, #spelltabbox9:hover, #spelltabbox10:hover {
+background-color:#9e9e9e;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bottombuffer {
+position:absolute;
+width:50%;
+height:5%;
+left:25%;
+top:223%;
+}
+
+.tabs{
+display:inline-block;
 width:100%;
 height:100%;
-text-align:right;
-color:#24201a;
-font-family:Amatic SC;
-font-size:140%;
-letter-spacing:3px;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
- 
-.tabs:hover {
-color:#ffffff;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
- 
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
+
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20,#tab21,#tab22 {
 display: none;
 }
- 
-i {
-color:#666666;
-font-size:90%;
-}
- 
+
 h1 {
-color: #333333;
-font-family: Amatic SC;
-letter-spacing:3px;
+color:#EAEAEA;
+font-family: 'Amatic SC', cursive;
+border-bottom:1px solid #333333;
 text-align:center;
-font-size: 150%;
+font-size:2vh;
+line-height:0;
 }
- 
-b {
-font-size: 100%;
+
+i {
+color:#333333;
+}
+
+a {
 color:#666666;
+text-decoration:none;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#FFFFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+b {
+color:#FFFFFF;
+background-color:#666666;
+text-transform:uppercase;
 }
 </style>
 
-<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;}</style>
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|BenchNine" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation(id) {document.getElementById('backstorytext').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('backstorypic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('inventorytext').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('conjurationspells').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('bardismspells').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1')">Details </span>
+<div id="bigbox"></div>
+
+<div id="basicholder"></div>
+<div id="nametitle">
+Name
 </div>
-<div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab2')">History </span>
+<div id="name">
+Nella O'Connor (Voltolini)
 </div>
-<div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab3')">Inventory </span>
+<div id="agetitle">
+Age
 </div>
-<div id="tabbox4">
-<span class="tabs" onClick="changeNavigation ('tab4')">Conjuration </span>
+<div id="age">
+Mid-Late Twenties
 </div>
-<div id="tabbox5">
-<span class="tabs" onClick="changeNavigation ('tab5')">Bardism </span>
+<div id="birthdaytitle">
+D.O.B.
 </div>
-<div id="tabbox6">
-<span class="tabs" onClick="changeNavigation ('tab6')">Voltolini </span>
+<div id="birthdate">
+April 14th
 </div>
-<div id="picbox">
+<div id="gendertitle">
+Gender
 </div>
-<div id="content">
-<h1>Basic Information</h1>
-<img style="height:50%;" align="left" src="https://i.imgur.com/agMvmlf.png"/>
-<b>Name:</b> Nella O'Connor<br>
-<b>Maiden Name:</b> Voltolini<br>
-<b>Age:</b> Mid Twenties<br>
-<b>Birthdate:</b> April 14th<br>
-<b>Gender:</b> Cisgender Female<br>
-<b>Sexuality:</b> Demisexual<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Italian<br>
-<b>Magic Trees:</b> Conjuration, Bardism<br>
-<b>Tree Ranks:</b> Duomancer (both)<br>
-<b>Instruments:</b> Violin, Piano, Vocal<br>
-<b>Occupation:</b> Mercenary<br>
-<b>Patron Diety:</b> Symphony, Goddess of Music<br>
-<b>Height:</b> 5'6"<br>
-<b>Weight:</b> 130 lbs.
+<div id="gender">
+Cisgender Female
 </div>
-<div id="title">
-T<br>H<br>E<br><br>V<br>I<br>O<br>L<br>I<br>N<br>I<br>S<br>T
+<div id="racetitle">
+Race
 </div>
-<div id="tab1">
-<h1>Detailed Information</h1>
-<img style="height:50%;" align="left" src="https://i.imgur.com/QP17emO.png"/>
-<b>Appearance</b><br>
+<div id="race">
+Human, Italian
+</div>
+<div id="lace1"></div>
+<div id="basicpic"></div>
+<div id="details">
+<h1>Appearance</h1>
 While not very muscular, Nella has still grown to be very fit in stature. There isn't very much excess mass to her slender frame, save for her luxuriously rounded bust and rear, allowing her to stay small and agile. While she doesn't have very much strength she makes up for it in endurance and flexibility. Her skin is smooth and blemish-free, stretching perfectly over her hourglass figure in its soft brown hues. Very dark thick brown hair hangs frames her face and reaches all the way to her lower back. Nella's facial structure is rather gentle, her cheekbones visible but softened by rosy rounded cheeks, a small pointed chin, a narrow cute nose, and a pair of full pink lips. Her eyes are wide, being the main cause of her youthful appearance, but her irises are such a dark shade of brown that it is hard to separate them from her black pupils.
-<br><br>
-<b>Attire</b><br>
-<img style="height:50%;" align="right" src="https://i.imgur.com/rEGoPSF.png"/>
-She is very modest and simple in her style choice, wearing mostly t-shirts and skirts or long pants. Very little jewelry ever decorates her body and her long hair is usually left to hang down naturally.
-<br><br>
-<b>Personality</b><br>
+<br>
+<h1>Personality</h1>
 As a human mage trials have led her to be a very calculating individual. She may come off as shy or reserved but Nella is primarily quiet. She continuously watches in order to learn everything she can about a person. When she does speak, her words are few and deliver exactly what is on her mind and nothing more or less. She often spends her energy learning what she can do to help others around her, but some suspect a scheme behind her innocent eyes.
 </div>
+<div id="lace2"></div>
+
+<div id="gallery"></div>
+<div id="pic1"></div>
+<div id="pic2"></div>
+<div id="pic3"></div>
+
+<div id="backstoryholder"></div>
+<div id="backstory">
+<div id="backstorypic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/c6ydtoL.png"/>
+</div>
+<div id="backstorytext">
+<h1>The Voltolini Legacy</h1>
+</div>
+</div>
+<div id="historytab1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2')">The Voltolini Legacy</span>
+</div>
+<div id="historytab2">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab4')">Childhood</span>
+</div>
+<div id="historytab3">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6')">Discovery of Magic</span>
+</div>
+<div id="historytab4">
+<span class="tabs" onClick="changeNavigation ('tab7');changeNavigation1 ('tab8')">Present Times</span>
+</div>
+<div id="tab1">
+<h1>The Voltolini Legacy</h1>
+</div>
 <div id="tab2">
-<h1>History & Lore</h1>
-<img style="height:50%;" align="left" src="https://i.imgur.com/khJxLWI.png"/>
-For her entire childhood, Nella Maria Voltolini was raised in a little orphanage off the city known as Verona, Italy. Unbeknownst to her, she was one of two Voltolini daughters, her father a renown surgeon and her mother an elite violinist. She grew up very shy in a dog-eat-dog world, her only friends being a boy named Apollo and her own violin. Music was her light in a dark world and she pursued it passionately since the day she could walk.<br><br>
-When she came of age and was legally allowed to leave the orphanage to live on her own, Nella headed straight for The Temple of Symphony in Venice, the patron goddess of music. There she would serve her favorite and most cherished deity with her natural talent. A few years brought her to high ranks within the temple, which meant she was allowed around some of the most prestigious musicians of her time. It was around them that she discovered magic.<br><br>
-The Arcane Arts piqued the young woman's interest, and rumors of magical academies made her fantasies possible. She set out in search of a specific school for mages with Symphony's blessing, promising to return and continue serving Her. The journey was fruitful and she began learning how to access her own stored mana.<br><br>
-A short time after her arrival and her developing relationship with an Auror named Ryan O'Connor, her loyalty to her heart led her to run away from the Academy with him. He and his closest friends had committed crimes against the staff and were considered exiles. Now she roams with her husband, looking for any work they can find. A recent promising paycheck has led them to yet a completely different world entirely, on a whole new plane of existence. There just so happens to be another school for the arcane arts near their newest employers.
+<img style="width:100%;height:100%;" src="https://i.imgur.com/c6ydtoL.png"/>
 </div>
 <div id="tab3">
-<h1>Items & Weapons</h1>
+<h1>Childhood</h1>
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/TTqRnjs.png"/>
+</div>
+<div id="tab5">
+<h1>Discovery of Magic</h1>
+</div>
+<div id="tab6">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/vd6VjvJ.png"/>
+</div>
+<div id="tab7">
+<h1>Present Times</h1>
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/zgC1FlQ.png"/>
+</div>
+
+<div id="relationsholder"></div>
+<div id="friend1">
+<div id="ficon">
+<a title="Guitarist" target="_blank" href="http://guitarist.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/g/u/guitarist/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+Ryan O'Connor
+</div>
+<div id="friendrelation">
+Husband
+</div>
+<div id="friendthoughts">
+"A constant steadiness in my life, a reliable best friend. Strong leader with a brave smile."
+</div>
+</div>
+<div id="friend2">
+<div id="ficon">
+<a title="Glass" target="_blank" href="http://glass.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/g/l/glass/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+Claire O'Connor
+</div>
+<div id="friendrelation">
+Sister (In-Law)
+</div>
+<div id="friendthoughts">
+"Kindhearted young woman with a pure soul, ready to throw herself under the bus for others."
+</div>
+</div>
+<div id="friend3">
+<div id="ficon">
+<a title="Violist" target="_blank" href="http://violist.chatango.com"><img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violist/thumb.jpg"/></a>
+</div>
+<div id="friendname">
+Carlotta Voltolini
+</div>
+<div id="friendrelation">
+Sister
+</div>
+<div id="friendthoughts">
+"Strange and particular but friendly, my elder sister is a wonderful mother and wife."
+</div>
+</div>
+<div id="friend4">
+<div id="ficon">
+<img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violinist/thumb.jpg"/>
+</div>
+<div id="friendname">
+???
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="friendthoughts">
+"???"
+</div>
+</div>
+<div id="friend5">
+<div id="ficon">
+<img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violinist/thumb.jpg"/>
+</div>
+<div id="friendname">
+???
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="friendthoughts">
+"???"
+</div>
+</div>
+<div id="friend6">
+<div id="ficon">
+<img style="width:100%;height:100%;" src="http://fp.chatango.com/profileimg/v/i/violinist/thumb.jpg"/>
+</div>
+<div id="friendname">
+???
+</div>
+<div id="friendrelation">
+???
+</div>
+<div id="friendthoughts">
+"???"
+</div>
+</div>
+
+<div id="inventoryholder"></div>
+<div id="inventorytab1">
+<span class="tabs" onClick="changeNavigation2 ('tab9')">Basic Items</span>
+</div>
+<div id="inventorytab2">
+<span class="tabs" onClick="changeNavigation2 ('tab10')">Magic Items</span>
+</div>
+<div id="inventorytab3">
+<span class="tabs" onClick="changeNavigation2 ('tab11')">Conjuration Medium</span>
+</div>
+<div id="inventorytab4">
+<span class="tabs" onClick="changeNavigation2 ('tab12')">Bardism Medium</span>
+</div>
+<div id="inventory">
+<div id="inventorytext">
+<h1>Basic Items</h1>
 <b>The Unstringed Violin</b><br>
-Just the typical body of a full sized Stradivarius violin, crafted out of oak. While the instrument itself is nearly as old as its owner, the hollow wooden item has no strings attached to it. Nella often carries this object strapped to her back like a blade or a quiver of arrows would normally be.
+Just the typical body of a full sized Stradivarius violin, crafted out of oak. While the instrument itself is nearly as old as its owner, the hollow wooden item has no strings attached to it. Nella often carries this object strapped to her back like a blade or a quiver of arrows would normally be. 
+<br><br>
+<b>Daggers (x2)</b><br>
+Two typical iron grade blades only about a foot in length and three inches in width with hilts wrapped in leather for easier grip. These weapons are usually kept in leather sheathes strapped to their wielder's thighs. 
+</div>
+</div>
+<div id="tab9">
+<h1>Basic Items</h1>
+<b>The Unstringed Violin</b><br>
+Just the typical body of a full sized Stradivarius violin, crafted out of oak. While the instrument itself is nearly as old as its owner, the hollow wooden item has no strings attached to it. Nella often carries this object strapped to her back like a blade or a quiver of arrows would normally be. 
 <br><br>
 <b>Daggers (x2)</b><br>
 Two typical iron grade blades only about a foot in length and three inches in width with hilts wrapped in leather for easier grip. These weapons are usually kept in leather sheathes strapped to their wielder's thighs.
-<br><br>
-<h1>Mediums</h1>
-<img align="right" style="width:50%;" src="https://media.giphy.com/media/F3F8RBo3achyw/giphy.gif"/>
-<b>Violinist's Instrument</b><br><i>High Mage Medium: Conjuration + Bardism</i><br>
-When not in use, this tool simply takes on the appearance of a transparent cross between wooden and glass (despite being made of Titanium grade materials) violin, complete with all the necessary body parts. The Conjuration aspect of this Medium allows the caster to summon string conjurations on/over the existing nonmagic strings, and gives her the ability to thicken or thin them out at will. The body itself has the capacity to mold its shape accordingly with the thickness of the strings, which allows the possibility of accessing all kinds of clefs and keys. The deeper and louder the tone, the further her active conjurations can exist and be manipulated around her. (Increases radius of telepathic manipulation of spells under this tree, caps at ten extra feet.)
+</div>
+<div id="tab10">
+<h1>Magic Items</h1>
+<img align="right" style="width:30%;" src="https://media.giphy.com/media/F3F8RBo3achyw/giphy.gif"/>
+<b>Violinist's Instrument</b> <i>(High Mage Medium)</i><br>
+When not in use, this tool simply takes on the appearance of a transparent cross between wooden and glass (despite being made of Titanium grade materials) violin, complete with all the necessary body parts. The Conjuration aspect of this Medium allows the caster to summon string conjurations on/over the existing nonmagic strings, and gives her the ability to thicken or thin them out at will. The body itself has the capacity to mold its shape accordingly with the thickness of the strings, which allows the possibility of accessing all kinds of clefs and keys. The deeper and louder the tone, the further her active conjurations can exist and be manipulated around her. (Increases radius of telepathic manipulation of spells under this tree, caps at ten extra feet.) 
 <br>
 Bardism's aspect only works if the violin's strings haven't been engulfed by conjured strings. When playing specific tunes that activate Bardism spells while using this Medium, the caster is able to temporarily implement the strings of notes into the violin itself, allowing it to keep a magical archive of memory which it can replicate and playback like a recorded message without actually being played physically as an instrument. Replication will allow the spells to be cast from the Medium while it is not actively being played, allowing the opportunity of using it sort of like a turret. The caster is capable of telepathically controlling this violin within a ten foot radius of her own body, allowing it to hover or float around her at will. Only up to three different spell-tunes can be recorded into the Medium's "memory" at once (they HAVE to have been played with the intention of being recorded) and will only remain for five rotations before it's wiped and the entire ability requires re-activation.
 </div>
-<div id="tab4">
-<h1>Conjuration</h1>
+<div id="tab11">
+<h1>Conjuration High Duomancer Medium</h1>
+To be unlocked
+</div>
+<div id="tab12">
+<h1>Bardism High Duomancer Medium</h1>
+To be unlocked
+</div>
+
+<div id="primarytree"></div>
+<div id="primarytreebox1"></div>
+<div id="conjuration">
+<h1>Conjuration: Duomancer</h1>
 <i>"Conjuration is the art of summoning objects to one's self for their own use. These objects will return to the storage dimension in which they came from after usage. These objects also may possess a very wide array of special properties, and may even be controlled telepathically by the Conjurer once a certain mastery has been achieved."</i>
-<br><br>
+</div>
+<div id="primarytreebox2"></div>
+<div id="conjurationspells">
 <h1>Paige Spells</h1>
 <b>Basic Catalyst; Summon Strings</b><br>
-The caster summons a set of tin violin strings (scale to iron at mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause slight irritation, for those within a fifteen foot radius of the strings. The force produced by the enhanced soundwaves will also be enough to lightly push the average human backward up to five feet if they are not prepared or braced against it.
+The caster summons a set of tin violin strings (scale to iron at mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause slight irritation, for those within a fifteen foot radius of the strings. The force produced by the enhanced soundwaves will also be enough to lightly push the average human backward up to five feet if they are not prepared or braced against it. 
 <br><br>
 <b>Basic Tool; Violinist's Bow</b><br>
-An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes. It's only tin in durability (scales to iron at Mage) and offers the caster a slight buff in physical speed (x1.5) when summoned. The buff wears off when desummoned or destroyed.
+An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes. It's only tin in durability (scales to iron at Mage) and offers the caster a slight buff in physical speed (x1.5) when summoned. The buff wears off when desummoned or destroyed. 
 <br><br>
 <b>Mask of Anonymity</b><br>
-A tin construct (scales until reaching Iron at Mage) that covers the entirety of the caster's face. The mask has lenses for the eyes that allow the caster to see out but not those on the outside to see in. There are very thin layered vents in the mask's surface that allow the caster to breathe when it is summoned, but are too small for even most insects to crawl in through. While the mask can be removed at will when summoned, it has a magical ability that allows it to stick to the frame of the caster's face perfectly and tightly enough to stay on unless intentionally removed.
+A tin construct (scales until reaching Iron at Mage) that covers the entirety of the caster's face. The mask has lenses for the eyes that allow the caster to see out but not those on the outside to see in. There are very thin layered vents in the mask's surface that allow the caster to breathe when it is summoned, but are too small for even most insects to crawl in through. While the mask can be removed at will when summoned, it has a magical ability that allows it to stick to the frame of the caster's face perfectly and tightly enough to stay on unless intentionally removed. 
+</div>
+<div id="spelltabbox1">
+<span class="tabs" onClick="changeNavigation3 ('tab13')">Paige</span>
+</div>
+<div id="spelltabbox2">
+<span class="tabs" onClick="changeNavigation3 ('tab14')">Mage</span>
+</div>
+<div id="spelltabbox3">
+<span class="tabs" onClick="changeNavigation3 ('tab15')">Expert Mage</span>
+</div>
+<div id="spelltabbox4">
+<span class="tabs" onClick="changeNavigation3 ('tab16')">Duomancer</span>
+</div>
+<div id="spelltabbox5">
+<span class="tabs" onClick="changeNavigation3 ('tab17')">High Duomancer</span>
+</div>
+<div id="tab13">
+<h1>Paige Spells</h1>
+<b>Basic Catalyst; Summon Strings</b><br>
+The caster summons a set of tin violin strings (scale to iron at mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause slight irritation, for those within a fifteen foot radius of the strings. The force produced by the enhanced soundwaves will also be enough to lightly push the average human backward up to five feet if they are not prepared or braced against it. 
 <br><br>
+<b>Basic Tool; Violinist's Bow</b><br>
+An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes. It's only tin in durability (scales to iron at Mage) and offers the caster a slight buff in physical speed (x1.5) when summoned. The buff wears off when desummoned or destroyed. 
+<br><br>
+<b>Mask of Anonymity</b><br>
+A tin construct (scales until reaching Iron at Mage) that covers the entirety of the caster's face. The mask has lenses for the eyes that allow the caster to see out but not those on the outside to see in. There are very thin layered vents in the mask's surface that allow the caster to breathe when it is summoned, but are too small for even most insects to crawl in through. While the mask can be removed at will when summoned, it has a magical ability that allows it to stick to the frame of the caster's face perfectly and tightly enough to stay on unless intentionally removed. 
+</div>
+<div id="tab14">
 <h1>Mage Spells</h1>
 <b>Grabby Hand (Spell taught by Ryan O'Connor)</b><br>
-The caster summons a strange, sort of ethereal glove that covers their hand with a magical tether attached. They can shoot this glove off of their hand to reach for an object/person a max distance of (40) feet away; and can either haul the object toward them or pull themself toward the object, akin to a grappling hook.<br>
-The caster can now simply propel themself forward using the kinetic energy from the blast the hand lets off. Meaning that they can fly half the distance of the hand simply by contracting the tether of the glove and launching themself forward.
+The caster summons a strange, sort of ethereal glove that covers their hand with a magical tether attached. They can shoot this glove off of their hand to reach for an object/person a max distance of (40) feet away; and can either haul the object toward them or pull themself toward the object, akin to a grappling hook.
+<br>
+The caster can now simply propel themself forward using the kinetic energy from the blast the hand lets off. Meaning that they can fly half the distance of the hand simply by contracting the tether of the glove and launching themself forward. 
 <br><br>
 <b>Goddess' Gift: Halo of Enlightenment</b><br>
-A basic iron-grade (scales to cobalt at expert mage) golden hoop that always floats just an inch above the caster's head (unless forcibly removed or destroyed). It radiates a harmless pulse that relays whatever the pulses can come in physical contact with--within a fifteen foot of the caster in every direction around them--into mentally mapped images. When surrounded by darkness, the halo radiates a soft enough glow to illuminate twenty feet around her, and if a post is spent charging the light it can be pent up and released in a bright flash that is capable of momentarily blinding opponents within a twenty foot radius of the source.
+A basic iron-grade (scales to cobalt at expert mage) golden hoop that always floats just an inch above the caster's head (unless forcibly removed or destroyed). It radiates a harmless pulse that relays whatever the pulses can come in physical contact with--within a fifteen foot of the caster in every direction around them--into mentally mapped images. When surrounded by darkness, the halo radiates a soft enough glow to illuminate twenty feet around her, and if a post is spent charging the light it can be pent up and released in a bright flash that is capable of momentarily blinding opponents within a twenty foot radius of the source. 
 <br><br>
 <b>Beginner Tool; Violinist's Bow (Upgrade to Basic Tool; Violinist's Bow)</b><br>
-An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes. It's only iron in durability (scales to cobalt at expert mage) and offers the caster a small buff in physical speed and reaction time (x2) when summoned. The buff wears off when desummoned or destroyed.<br>
+An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes. It's only iron in durability (scales to cobalt at expert mage) and offers the caster a small buff in physical speed and reaction time (x2) when summoned. The buff wears off when desummoned or destroyed.
+<br>
 In addition, when in archer's bow form this conjuration is now capable of creating and firing arrows of pure energy, with the ability to pierce through things of equal rank (or iron in toughness, scales to expert/cobalt). Can fire up to two arrows at once, each one flying at typical speeds as though physical arrows being shot from a bow, and can only reach twenty-five feet away from the caster before being forced to dissipate. 
 <br><br>
 <b>Beginner Catalyst; Summon Strings (Upgrade to Basic Catalyst; Summon Strings)</b><br>
-The caster summons a set of iron violin strings (scale to cobalt at expert mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form that can measure up to ten feet), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause momentary stunning pain and deafness, for those within a twenty foot radius of the strings. The force produced by the enhanced soundwaves will also be enough to forcibly move the average human backward up to fifteen feet if (five feet for those x2 human strength) and capable of warping through iron constructs/materials (magical and nonmagical).
+The caster summons a set of iron violin strings (scale to cobalt at expert mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form that can measure up to ten feet), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause momentary stunning pain and deafness, for those within a twenty foot radius of the strings. The force produced by the enhanced soundwaves will also be enough to forcibly move the average human backward up to fifteen feet if (five feet for those x2 human strength) and capable of warping through iron constructs/materials (magical and nonmagical). 
 <br><br>
 <b>Armor of Anonymity (Upgrade to Mask of Anonymity)</b><br>
-When summoning and wearing this mask, the caster is coated in a thick layer of colored mana that works like a flexible body suit and will be able to hide colors and other visual details of the wearer (does not effect physical shape in any way, just appearance), but has a toughness grade of Iron (scales naturally to Cobalt at Expert). In addition to offering an extra level of protection, the armor is also able to mute the wearer's footsteps. Only works on their feet, no other parts of their body would be muted.<br>
-The mask is able to retain the same abilities it had before, but while it is not on the caster's face the energy armor will not be active.
-<br><br>
+When summoning and wearing this mask, the caster is coated in a thick layer of colored mana that works like a flexible body suit and will be able to hide colors and other visual details of the wearer (does not effect physical shape in any way, just appearance), but has a toughness grade of Iron (scales naturally to Cobalt at Expert). In addition to offering an extra level of protection, the armor is also able to mute the wearer's footsteps. Only works on their feet, no other parts of their body would be muted.
+<br>
+The mask is able to retain the same abilities it had before, but while it is not on the caster's face the energy armor will not be active. 
+</div>
+<div id="tab15">
 <h1>Expert Mage Spells</h1>
 <b>Voltolini Armor (Upgrade to Armor of Anonymity)</b><br>
-A very dark and detailed set of light armor that cloaks the wearer as though they had clothing on their body (see images provided to the left for appearance of said armor) that is all just aesthetic for a singular spell. The source of this conjuration is a cobalt grade mask (scales to Titanium at High Mage) but no longer is the caster required to wear the mask to keep the armor active. So long as the mask remains within a thirty foot radius of the caster, her armor will remain intact, assuming the mask itself is not destroyed, or the armor.<br>
+A very dark and detailed set of light armor that cloaks the wearer as though they had clothing on their body (see images provided to the left for appearance of said armor) that is all just aesthetic for a singular spell. The source of this conjuration is a cobalt grade mask (scales to Titanium at High Mage) but no longer is the caster required to wear the mask to keep the armor active. So long as the mask remains within a thirty foot radius of the caster, her armor will remain intact, assuming the mask itself is not destroyed, or the armor.
+<br>
 While only leather and thin fabric in appearance and to the touch--allowing the outfit to be as light and flexible as it appears--the conjuration's make up is actually as tough as cobalt (scales to Titanium at High Mage). Not only does this armor, so long as it remains active, mute any noises the wearer makes with any part of their body, but should she be surrounded by natural or magical shadows and darkness created by allies, the suit will allow the eyes of mages (even those with equal or lower ranking sensory abilities) to slip past her as though she were invisible. 
 <br><br>
 <b>Intermediate Tool; Violinist's Bow (Upgrade to Beginner Tool; Violinist's Bow)</b><br>
-An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes, and can be telepathically controlled within a fifteen foot radius of the caster's body in either form. It's only cobalt in durability (scales to titanium at high mage) and offers the caster a buff in physical speed and mental speed (this includes mental processing and reaction time, x2.5) when summoned. The buff wears off when desummoned or destroyed. <br>
-In addition, when in archer's bow form this conjuration is now capable of creating and firing arrows of pure energy, with the ability to pierce through things of equal rank (or cobalt in toughness, scales to expert/cobalt). Can fire up to four arrows at once, each one flying at twice the typical speeds as physical arrows being shot from a bow, and can only reach thirty-five feet away from the caster before being forced to dissipate. When they come in contact with a physical surface that is capable of stopping them, they erupt into an explosion of destructive force that covers a ten foot radius (for each individual arrow) and is capable of breaking through cobalt grade constructs/materials both magical and nonmagical.
+An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes, and can be telepathically controlled within a fifteen foot radius of the caster's body in either form. It's only cobalt in durability (scales to titanium at high mage) and offers the caster a buff in physical speed and mental speed (this includes mental processing and reaction time, x2.5) when summoned. The buff wears off when desummoned or destroyed. 
+<br>
+In addition, when in archer's bow form this conjuration is now capable of creating and firing arrows of pure energy, with the ability to pierce through things of equal rank (or cobalt in toughness, scales to expert/cobalt). Can fire up to four arrows at once, each one flying at twice the typical speeds as physical arrows being shot from a bow, and can only reach thirty-five feet away from the caster before being forced to dissipate. When they come in contact with a physical surface that is capable of stopping them, they erupt into an explosion of destructive force that covers a ten foot radius (for each individual arrow) and is capable of breaking through cobalt grade constructs/materials both magical and nonmagical. 
 <br><br>
 <b>Intermediate Catalyst; Summon Strings (Upgrade to Beginner Catalyst; Summon Strings)</b><br>
-The caster summons a set of cobalt violin strings (scale to titanium at high mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form that can measure up to fifteen feet, and retract down to five at will), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause deafness and an intense migraine for two rotations, for those within a thirty foot radius of the strings (thirty-five feet for those with sensitive audible sensory). The force produced by the enhanced soundwaves will also be enough to blow back anything under two hundred pounds and capable of warping straight through cobalt constructs/materials (magical and nonmagical, scales to titanium at high mage). This effect can be willingly turned off from affecting allies as long as they are within a twenty foot radius of her.
-<br><br>
+The caster summons a set of cobalt violin strings (scale to titanium at high mage) onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form that can measure up to fifteen feet, and retract down to five at will), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be uncomfortably hard on the ears, just enough to cause deafness and an intense migraine for two rotations, for those within a thirty foot radius of the strings (thirty-five feet for those with sensitive audible sensory). The force produced by the enhanced soundwaves will also be enough to blow back anything under two hundred pounds and capable of warping straight through cobalt constructs/materials (magical and nonmagical, scales to titanium at high mage). This effect can be willingly turned off from affecting allies as long as they are within a twenty foot radius of her. 
+</div>
+<div id="tab16">
 <h1>Duomancer Spells</h1>
 <b>Voltolini Armor (Upgrade)</b><br>
-A very dark and detailed set of light armor that cloaks the wearer as though they had clothing on their body (see images provided to the left for appearance of said armor) that is all just aesthetic for a singular spell. The source of this conjuration is a tungsten grade mask but no longer is the caster required to wear the mask to keep the armor active. So long as the mask remains within a fifty foot radius of the caster, her armor will remain intact, assuming the mask itself is not destroyed, or the armor.
-While only leather and thin fabric in appearance and to the touch--allowing the outfit to be as light and flexible as it appears--the conjuration's make up is actually as durable as tungsten, and offers protection of that grade. When the armor's effects are activated, it masks all traces of her presence (physical, spiritual, magical, audible, etc etc) from equal ranked sensory for two posts after activation, and all lower ranked sensory for six posts after activation. The cloaking ability requires a three rotation cooldown before it can be re-activated.
+A very dark and detailed set of light armor that cloaks the wearer as though they had clothing on their body (see images provided to the left for appearance of said armor) that is all just aesthetic for a singular spell. The source of this conjuration is a tungsten grade mask but no longer is the caster required to wear the mask to keep the armor active. So long as the mask remains within a fifty foot radius of the caster, her armor will remain intact, assuming the mask itself is not destroyed, or the armor. While only leather and thin fabric in appearance and to the touch--allowing the outfit to be as light and flexible as it appears--the conjuration's make up is actually as durable as tungsten, and offers protection of that grade. When the armor's effects are activated, it masks all traces of her presence (physical, spiritual, magical, audible, etc etc) from equal ranked sensory for two posts after activation, and all lower ranked sensory for six posts after activation. The cloaking ability requires a three rotation cooldown before it can be re-activated. 
 <br><br>
 <b>Advanced Tool; Violinist's Bow (Upgrade to Intermediate Tool; Violinist's Bow)</b><br>
-An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes, and can be telepathically controlled within a twenty-five foot radius of the caster's body in either form. It's only tungsten in durability and offers the caster a buff in physical speed and mental speed (this includes mental processing and reaction time, x4) when summoned. The buff wears off when desummoned or destroyed.<br>
-In addition, when in archer's bow form this conjuration is now capable of creating and firing arrows of pure energy, with the ability to pierce through things of equal rank (or tungsten in toughness). Can fire up to six refined arrows at once, each one flying at x2.5 the typical speeds as physical arrows being shot from a bow, and can only reach fifty feet away from the caster before being forced to dissipate. When they come in contact with a physical surface that is capable of stopping them, they erupt into an explosion of destructive force that covers up to a fifteen foot radius (for each individual arrow) and is capable of breaking through tungsten grade constructs/materials both magical and nonmagical.<br>
-The caster has unlocked a secondary ability for this bow's energy arrows. This new mode allows for her to refract her arrows into a bunch of smaller versions, firing an AoE of tungsten-grade energy darts that are only spaced inches apart and completely fill a thirty foot radius. Only one mode or the other can be active at one time, trading explosions for the AoE.<br>
-This mass of darts can be aimed and fired up to forty feet away from the bow itself.
+An intricate violin bow that has the ability to convert into an archer's bow, and has the ability to act like a typical version of both modes, and can be telepathically controlled within a twenty-five foot radius of the caster's body in either form. It's only tungsten in durability and offers the caster a buff in physical speed and mental speed (this includes mental processing and reaction time, x4) when summoned. The buff wears off when desummoned or destroyed.
+<br>
+In addition, when in archer's bow form this conjuration is now capable of creating and firing arrows of pure energy, with the ability to pierce through things of equal rank (or tungsten in toughness). Can fire up to six refined arrows at once, each one flying at x2.5 the typical speeds as physical arrows being shot from a bow, and can only reach fifty feet away from the caster before being forced to dissipate. When they come in contact with a physical surface that is capable of stopping them, they erupt into an explosion of destructive force that covers up to a fifteen foot radius (for each individual arrow) and is capable of breaking through tungsten grade constructs/materials both magical and nonmagical.
+<br>
+The caster has unlocked a secondary ability for this bow's energy arrows. This new mode allows for her to refract her arrows into a bunch of smaller versions, firing an AoE of tungsten-grade energy darts that are only spaced inches apart and completely fill a thirty foot radius. Only one mode or the other can be active at one time, trading explosions for the AoE.
+This mass of darts can be aimed and fired up to forty feet away from the bow itself. 
 <br><br>
 <b>Advanced Catalyst; Summon Strings (Upgrade to Intermediate Catalyst; Summon Strings)</b><br>
 The caster summons a set of tungsten violin strings onto the instrument (the four typically required, can just be summoned to the caster's hand twined together into a singular whip-like form that can measure up to thirty feet, and retract down to five at will), already tuned up and ready to go. They can be played, like any other nonmagic strings, but if mana is channeled through them they magnify the intensity of the soundwaves they typically produce. This will cause the volume of the music to be extremely hard on the ears even permanently (heal-able) deafening those within a forty-five foot radius of the strings (fifty-five feet for those with enhanced audible sensory). The force produced by the enhanced soundwaves will also be enough to blow back anything under five hundred pounds and capable of warping straight through tungsten constructs/materials (magical and nonmagical). This effect can be willingly turned off from affecting allies as long as they are within a forty foot radius of her.
 </div>
-<div id="tab5">
-<h1>Bardism</h1>
+<div id="tab17">
+<h1>High Duomancer Spells</h1>
+To be unlocked.
+</div>
+
+<div id="secondarytree"></div>
+<div id="secondarytreebox1"></div>
+<div id="bardism">
+<h1>Bardism: Duomancer</h1>
 <i>"Although music is a beautiful expression of art, the proper mage may cause it to become something much more. Bard's have the ability to convert music into powerful spells, focused primarily on buffing and (slight) healing. However, at higher levels Bardism can certainly do heavy damage, with a particular strength in sound based attacks."</i>
-<br><br>
+</div>
+<div id="secondarytreebox2"></div>
+<div id="bardismspells">
 <h1>Paige Spells</h1>
 <b>Faerie's Waltz</b><br>
-A basic tune that when played (or sung) will double the physical speed (x2 with an upper cap of x2.5) of up to two allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a fifteen foot radius of the music's source. Lasts a duration of two rotations before the music's magical effects fade, requiring a rotation of cooldown before it can be cast again.
+A basic tune that when played (or sung) will double the physical speed (x2 with an upper cap of x2.5) of up to two allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a fifteen foot radius of the music's source. Lasts a duration of two rotations before the music's magical effects fade, requiring a rotation of cooldown before it can be cast again. 
 <br><br>
 <b>Siren's Lullaby</b><br>
-This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of four rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (not caused by magical means), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm. This will cause drowsiness in targets, making things slightly harder to process through their minds, or register at all.
+This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of four rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (not caused by magical means), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm. This will cause drowsiness in targets, making things slightly harder to process through their minds, or register at all. 
 <br><br>
 <b>Song of Cleansing</b><br>
-The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear base injuries not caused by magical means of any basic foreign contaminants also not caused by magical means. The longer this spell is upheld, the higher its cost, and it can only help those (one target at a time)  within a ten foot radius of the spell's source.
+The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear base injuries not caused by magical means of any basic foreign contaminants also not caused by magical means. The longer this spell is upheld, the higher its cost, and it can only help those (one target at a time) within a ten foot radius of the spell's source. 
+</div>
+<div id="spelltabbox6">
+<span class="tabs" onClick="changeNavigation4 ('tab18')">Paige</span>
+</div>
+<div id="spelltabbox7">
+<span class="tabs" onClick="changeNavigation4 ('tab19')">Mage</span>
+</div>
+<div id="spelltabbox8">
+<span class="tabs" onClick="changeNavigation4 ('tab20')">Expert Mage</span>
+</div>
+<div id="spelltabbox9">
+<span class="tabs" onClick="changeNavigation4 ('tab21')">Duomancer</span>
+</div>
+<div id="spelltabbox10">
+<span class="tabs" onClick="changeNavigation4 ('tab22')">High Duomancer</span>
+</div>
+<div id="tab18">
+<h1>Paige Spells</h1>
+<b>Faerie's Waltz</b><br>
+A basic tune that when played (or sung) will double the physical speed (x2 with an upper cap of x2.5) of up to two allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a fifteen foot radius of the music's source. Lasts a duration of two rotations before the music's magical effects fade, requiring a rotation of cooldown before it can be cast again. 
 <br><br>
+<b>Siren's Lullaby</b><br>
+This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of four rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (not caused by magical means), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm. This will cause drowsiness in targets, making things slightly harder to process through their minds, or register at all. 
+<br><br>
+<b>Song of Cleansing</b><br>
+The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear base injuries not caused by magical means of any basic foreign contaminants also not caused by magical means. The longer this spell is upheld, the higher its cost, and it can only help those (one target at a time) within a ten foot radius of the spell's source.
+</div>
+<div id="tab19">
 <h1>Mage Spells</h1>
 <b>Faerie's Waltz (Upgrade)</b><br>
-A basic tune that when played (or sung) will increase the physical speed and reaction time (x2.5 with an upper cap of x3.5) of up to three allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a twenty-five foot radius of the music's source. Lasts a duration of three rotations before the music's magical effects fade, requiring a rotation of cooldown before it can be cast again.
+A basic tune that when played (or sung) will increase the physical speed and reaction time (x2.5 with an upper cap of x3.5) of up to three allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a twenty-five foot radius of the music's source. Lasts a duration of three rotations before the music's magical effects fade, requiring a rotation of cooldown before it can be cast again. 
 <br><br>
 <b>Siren's Allure (Siren's Lullaby Upgrade)</b><br>
-This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of five rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (or magical tension caused by spells of lesser rank), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm drastically and very suddenly without any real warning. This will cause heavy drowsiness in targets (within a thirty foot radius of the music's source) messing with their mind's ability to register facts and comprehend quick movements or complicated maneuvers. By the fourth rotation they will be sent into an average form of sleep (easy to wake up from normally on one's own base abilities).
+This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of five rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (or magical tension caused by spells of lesser rank), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm drastically and very suddenly without any real warning. This will cause heavy drowsiness in targets (within a thirty foot radius of the music's source) messing with their mind's ability to register facts and comprehend quick movements or complicated maneuvers. By the fourth rotation they will be sent into an average form of sleep (easy to wake up from normally on one's own base abilities). 
 <br><br>
 <b>Song of Mending (Song of Cleansing Upgrade)</b><br>
-The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear and clean base injuries as well as base foreign contaminants of both nonmagical and magical means so long as the magical cause is lesser ranking than this particular spell. (Base injuries means minor things, such as: scrapes, cuts, bruises, ailments, venoms, poisons, etc.) The longer this spell is upheld, the higher its cost, and it can only help those (one target at a time) within a twenty foot radius of the spell's source.
+The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear and clean base injuries as well as base foreign contaminants of both nonmagical and magical means so long as the magical cause is lesser ranking than this particular spell. (Base injuries means minor things, such as: scrapes, cuts, bruises, ailments, venoms, poisons, etc.) The longer this spell is upheld, the higher its cost, and it can only help those (one target at a time) within a twenty foot radius of the spell's source. 
 <br><br>
 <b>Of Relief</b><br>
-With this musical tune comes a very useful buff, applicable only to allies so long as they remain within a twenty-five foot radius of the music's source. Only up to three allies (caster included into the numbers) can benefit from this spell at once, and after four rotations it deactivates. The nature of this spell buffs one's natural pain tolerance by a decent amount (x2.5 with an upper cap of x4) for its duration. A rotation of cooldown is required before the spell can be cast again.
+With this musical tune comes a very useful buff, applicable only to allies so long as they remain within a twenty-five foot radius of the music's source. Only up to three allies (caster included into the numbers) can benefit from this spell at once, and after four rotations it deactivates. The nature of this spell buffs one's natural pain tolerance by a decent amount (x2.5 with an upper cap of x4) for its duration. A rotation of cooldown is required before the spell can be cast again. 
 <br><br>
 <b>Sound of Mind</b><br>
 The magic behind the music allows up to four allies within its perameters of effect (30 feet) to actively take noises from the song and project them into a single other affected ally's mind, allowing for silent communication through noise with an inaudible copy of basic tunes/tones/noises/etc naturally found in the music already playing. It acts as a gentle quiet nudge and can be easily blocked out by force of will alone, allowing it to be a potential system of silent communication. Meanwhile, the noise playing outside in the tangible world can act as auditory distraction and block out mental sensory from enemies within or without the spell's radius of effect so long as their sensory is lesser rank or if they are weak to distractions (scales to Expert Mage). This spell can be upheld in exchange for a continuous mana drain that increases slightly every rotation it is kept active. 
-<br><br>
+</div>
+<div id="tab20">
 <h1>Expert Mage Spells</h1>
 <b>Faerie's Waltz (Upgrade)</b><br>
-A basic tune that when played (or sung) will increase the physical speed, mental processing speed, and reaction time (x3.5 with an upper cap of x5) of up to four allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a thirty-five foot radius of the music's source. Lasts a duration of five rotations before the music's magical effects fade, requiring two rotations of cooldown before it can be cast again.
+A basic tune that when played (or sung) will increase the physical speed, mental processing speed, and reaction time (x3.5 with an upper cap of x5) of up to four allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a thirty-five foot radius of the music's source. Lasts a duration of five rotations before the music's magical effects fade, requiring two rotations of cooldown before it can be cast again. 
 <br><br>
 <b>Siren's Allure (Upgrade)</b><br>
-This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of six rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (or magical tension caused by spells of lesser rank, this scales to High Mage), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm drastically and very suddenly without any real warning. This will cause targets lulled into the spell by the positive buff (within a forty foot radius of the music's source) to fall immediately into a normal sleep. Upon reaching the fourth rotation they will be sent into a heavy coma-like state that they can only be awakened from after two rotations, or spells designed to aid them in this situation of at least Mage rank (out of the set number of rotations this spell lasts, a target must be under this spell for at least four rotations for this effect to be reached, doesn't happen automatically as soon as two-to-four rotations pass after activation, unless the targets were legitimately under its influence). Requires a cooldown of two rotations before it can be cast again.
+This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of six rotations the first two just have a calming effect on high strung nerves and any form of natural tension in the body (or magical tension caused by spells of lesser rank, this scales to High Mage), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than two rotations, however, the spell's effects will enhance the feeling of calm drastically and very suddenly without any real warning. This will cause targets lulled into the spell by the positive buff (within a forty foot radius of the music's source) to fall immediately into a normal sleep. Upon reaching the fourth rotation they will be sent into a heavy coma-like state that they can only be awakened from after two rotations, or spells designed to aid them in this situation of at least Mage rank (out of the set number of rotations this spell lasts, a target must be under this spell for at least four rotations for this effect to be reached, doesn't happen automatically as soon as two-to-four rotations pass after activation, unless the targets were legitimately under its influence). Requires a cooldown of two rotations before it can be cast again. 
 <br><br>
 <b>Song of Healing (Song of Mending Upgrade)</b><br>
-The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear and clean most injuries as well as most base foreign contaminants of both nonmagical and magical means so long as the magical cause is lesser ranking than this particular spell (scales to High Mage). In addition, the musical mist may even heal moderate injuries (bigger scrapes, bruises, cuts, and lacerations that would typically require stitches. Scales to be able to heal slightly more serious injuries such as swelling, torn or sprained muscles, and very slight bone fractures), but healing may only be accomplished outside of battle, and leaves those who underwent healing fatigued and vulnerable. The longer this spell is upheld, the higher its cost, and it can only help those (up to two targets at a time) within a forty foot radius of the spell's source.
-<br><br>
+The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear and clean most injuries as well as most base foreign contaminants of both nonmagical and magical means so long as the magical cause is lesser ranking than this particular spell (scales to High Mage). In addition, the musical mist may even heal moderate injuries (bigger scrapes, bruises, cuts, and lacerations that would typically require stitches. Scales to be able to heal slightly more serious injuries such as swelling, torn or sprained muscles, and very slight bone fractures), but healing may only be accomplished outside of battle, and leaves those who underwent healing fatigued and vulnerable. The longer this spell is upheld, the higher its cost, and it can only help those (up to two targets at a time) within a forty foot radius of the spell's source. 
+</div>
+<div id="tab21">
 <h1>Duomancer Spells</h1>
 <b>Faerie's Waltz (Upgrade)</b><br>
-A basic tune that when played (or sung) will increase the physical speed, mental processing speed, and reaction time (x4 with an upper cap of x6) of up to four allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a fifty foot radius of the music's source. <br>
-In addition, for one singular rotation (which can be any inside the set number, doesn't have to be for the first or last one) of the affected allies' choice as long as it is within the set duration of the spell itself, they can access a more enhanced ability of the spell. By matching their movements in time to the music, they are capable of shortening the cast times of any spell currently in their inventory by one post. (New addition is a cast-time buff.)<br>
-The usual buff lasts a duration of seven rotations before the music's magical effects fade, requiring three rotations of cooldown before it can be cast again.
+A basic tune that when played (or sung) will increase the physical speed, mental processing speed, and reaction time (x4 with an upper cap of x6) of up to four allies (the caster included, taking up the possible slot of a buffed ally) so long as they remain within a fifty foot radius of the music's source. 
+<br>
+In addition, for one singular rotation (which can be any inside the set number, doesn't have to be for the first or last one) of the affected allies' choice as long as it is within the set duration of the spell itself, they can access a more enhanced ability of the spell. By matching their movements in time to the music, they are capable of shortening the cast times of any spell currently in their inventory by one post. (New addition is a cast-time buff.)
+<br>
+The usual buff lasts a duration of seven rotations before the music's magical effects fade, requiring three rotations of cooldown before it can be cast again. 
 <br><br>
 <b>Siren's Allure (Upgrade)</b><br>
-This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of seven rotations the first one just has a calming effect on high strung nerves and any form of natural tension in the body (or magical tension caused by spells of lesser rank), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than one rotation, however, the spell's effects will enhance the feeling of calm drastically and very suddenly without any real warning. This will cause targets lulled into the spell by the positive buff (as long as targets are within a sixty foot radius of the music's source) to fall immediately into a normal deep sleep. Upon reaching the third rotation they will be sent into a heavy coma-like state that they can only be awakened from naturally after three rotations, or spells designed to aid them in this situation of at least High Mage rank (out of the seven rotations, a target must be under this spell for at least three rotations for this effect to be reached, doesn't happen automatically as soon as one-to-three rotations pass after activation, unless the targets were legitimately under its influence). Requires a cooldown of three rotations before it can be cast again.
+This spell manifests through a very calm and serene tune, and it works to amplify the natural reaction one has to musical cues. During its maximum duration of seven rotations the first one just has a calming effect on high strung nerves and any form of natural tension in the body (or magical tension caused by spells of lesser rank), allowing one the chance to relax and feel comfortable. Should they remain within the radius of the debuff's effects longer than one rotation, however, the spell's effects will enhance the feeling of calm drastically and very suddenly without any real warning. This will cause targets lulled into the spell by the positive buff (as long as targets are within a sixty foot radius of the music's source) to fall immediately into a normal deep sleep. Upon reaching the third rotation they will be sent into a heavy coma-like state that they can only be awakened from naturally after three rotations, or spells designed to aid them in this situation of at least High Mage rank (out of the seven rotations, a target must be under this spell for at least three rotations for this effect to be reached, doesn't happen automatically as soon as one-to-three rotations pass after activation, unless the targets were legitimately under its influence). Requires a cooldown of three rotations before it can be cast again. 
 <br><br>
 <b>Song of Healing (Upgrade)</b><br>
 The caster creates a very specific tune, either through instrument or by voice, that can be continuously upheld. Mystical energies emit from the musical source, manifesting as a very gentle and thin fog that can clear and clean most injuries as well as most base foreign contaminants of both nonmagical and magical means so long as the magical cause is lesser ranking than this particular spell. In addition, the musical mist may even heal moderate injuries (anything up to broken bones in terms of injury severity), but healing itself may only be accomplished outside of battle, and leaves those who underwent true rejuvination fatigued and vulnerable for some time after (depending on wound severity and situation). The longer this spell is upheld, the higher its cost, and it can only help those (up to four targets at a time) within a fifty-five foot radius of the spell's source. (Contact with the mist is not required for the spell to cleanse, the target must simply be within the set radius. It is required for healing, however.)
 </div>
-<div id="tab6">
-<h1>Known Relatives</h1>
-<i>H u s b a n d</i>
-<br>
-<a href="http://guitarist.chatango.com"><img style="height:40%;" align="right" src="https://i.imgur.com/os9JiSX.jpg"/></a>
-<b>Name:</b> Ryan O'Connor<br>
-<b>Age:</b> Mid Twenties<br>
-<b>Birthdate:</b> May 3rd<br>
-<b>Gender:</b> Cisgender Male<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Irish-American<br>
-<b>Instruments:</b> Guitar, Piano, Bass<br>
-<b>Occupation:</b> Mercenary
-<br><br>
-<i>S i s t e r</i>
-<br>
-<a href="http://violist.chatango.com"><img style="height:40%;" align="right" src="https://i.imgur.com/uak8Itn.jpg"/></a>
-<b>Name:</b> Carlotta Voltolini<br>
-<b>Age:</b> Early Thirties<br>
-<b>Birthdate:</b> June 10th<br>
-<b>Gender:</b> Cisgender Female<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Italian<br>
-<b>Instruments:</b> Viola, Piano<br>
-<b>Occupation:</b> Bellona's Speaker<br>
-<b>Patron Diety:</b> Symphony, Goddess of Music
-<br><br>
-<i>S i s t e r - I n - L a w</i>
-<br>
-<a href="http://glass.chatango.com"><img style="height:40%;" align="right" src="https://i.imgur.com/y15WM7o.png"/></a>
-<b>Name:</b> Claire O'Connor<br>
-<b>Age:</b> Early Twenties<br>
-<b>Birthdate:</b> April 26th<br>
-<b>Gender:</b> Cisgender Female<br>
-<b>Species:</b> Human<br>
-<b>Race:</b> Irish-American<br>
-<b>Talent:</b> Glassblowing<br>
-<b>Occupation:</b> Mage Student
-<br><br>
+<div id="tab22">
+<h1>High Duomancer Spells</h1>
+To be unlocked.
 </div>
+
+<div id="bottombuffer"></div>
+
+<embed style="height: 0%; width: 0%;"src="Nella.mp3" autostart="true" loop="true">
